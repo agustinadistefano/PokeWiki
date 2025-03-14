@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Micro 5', sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+  background-image: linear-gradient(#ccc 1px, transparent 1px), linear-gradient(to right, #ccc 1px, transparent 1px);
+  background-size: 20px 20px;
+  color: var(--text-color);
+  min-height: 100vh;
+  padding-inline: 7%;
+  padding-block: 2rem;
+  margin-top: 80px;
+  font-size: large;
+}
