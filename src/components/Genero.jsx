@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FaChevronUp, FaChevronDown, FaChevronLeft } from "react-icons/fa";
+import { FaChevronUp, FaChevronDown, FaTimes } from "react-icons/fa";
 
 export function Genero() {
     const [data, setData] = useState([]);
@@ -95,7 +95,7 @@ export function Genero() {
 
     return (
         <>
-        <Link to="/" className='back-button'><FaChevronLeft size={30} /></Link>
+        <Link to="/" className='close-button icon'><FaTimes size={30} /></Link>
             <div className="genders">
                 <h2>Filtrar por Género</h2>
                 <select className='gender-select' onChange={(e) => {

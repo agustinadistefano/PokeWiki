@@ -76,7 +76,7 @@ export function Header({ sendSearch }) {
             <button className="icon-button-menu icon" onClick={toggleMenu}><FaBars size={24}/></button>
             </>}
             <div className={`menu ${menuActive ? 'active' : ''}`}>
-                <button className="close-button" onClick={closeMenu}><FaTimes /></button>
+                <button className="close-button icon" onClick={closeMenu}><FaTimes /></button>
                 <Link to="/genero" className="filter-button">Filtrar por Género</Link>
                 <Link to="/tipos" className="filter-button">Filtrar por Tipos</Link>
             </div>

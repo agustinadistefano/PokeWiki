@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FaChevronUp, FaChevronDown, FaChevronLeft } from "react-icons/fa";
+import { FaChevronUp, FaChevronDown, FaTimes } from "react-icons/fa";
 
 export function Tipos() {
     const [data, setData] = useState([]);
@@ -128,7 +128,7 @@ export function Tipos() {
 
     return (
         <>
-        <Link to="/" className='back-button'><FaChevronLeft size={30} /></Link>
+        <Link to="/" className='close-button icon'><FaTimes size={30} /></Link>
             <div className="tipos">
                 <h2>Filtrar por Tipos</h2>
                 <select className='types-selecect' onChange={(e) => {
@@ -146,7 +146,7 @@ export function Tipos() {
             <section id='list'>
                 {data.length > 0 &&
                     data.map((pok, i) => {
-                        let id = pok.url.split('/').filter(Boolean).pop(); // Obtener el ID del Pokémon desde la URL
+                        let id = pok.url.split('/').filter(Boolean).pop();
                         let idStr = id.toString().padStart(3, '0');
                         let img = "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/" + idStr + ".png";
                         let type1 = pok.types[0];

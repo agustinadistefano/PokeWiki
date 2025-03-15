@@ -1,7 +1,8 @@
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { NotFound } from './components/NotFound'
-import { Header } from './components/Header'
+import { Header } from './components/Header';
+import { Footer } from './components/Footer';
 import { Genero } from './components/Genero';
 import { Tipos } from './components/Tipos'
 import { ListPokemon } from './components/ListPokemon'
@@ -34,6 +35,7 @@ function App() {
         <Route path='/genero' element={<Genero />} />
         <Route path='/tipos' element={<Tipos />} />
       </Routes>
+    <Footer/>
     </>
   )
 }
