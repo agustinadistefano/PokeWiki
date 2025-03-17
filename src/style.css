@@ -128,9 +128,21 @@
     justify-content: center;
 }
 .logo {
-    width: 65px;
-    height: 65px;
-    border-radius: 50px;
+    width: 10%;
+    height: auto;
+    min-height: 40px;
+    min-width: 40px;
+    border-radius: 50%;
+}
+.logo-footer{
+    width: 24px;
+    height: auto;
+    border-radius: 50%;
+}
+.footer h3{
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 .form {
     display: flex;
@@ -175,7 +187,7 @@
 }
 .button {
     color: #313131;
-    width: 40%;
+    width: 50%;
     height: 30px;
     border-radius: 8px;
     display: flex;
