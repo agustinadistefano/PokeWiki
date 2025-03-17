@@ -57,11 +57,12 @@
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
 }
 .types {
-    display: flex;
+    display:flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     gap: 10px;
+    flex-wrap: wrap;
 }
 .types p {
     padding: 5px 10px;
@@ -73,6 +74,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: auto;
     gap: 10px;
     margin-left: 1rem;
     margin-right: 1rem;
